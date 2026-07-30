@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@ body {
     background-color: rgb(66, 214, 255);
 }
 
-/*Layout do menu em css*/
+/* Layout do menu em css */
 header {
     float: left;
     position: fixed;
@@ -29,8 +29,8 @@ header {
     z-index: 1000;
 }
 
-/* layout da lista dentro do header*/
-header ul{
+/* Layout da lista dentro do header */
+header ul {
     display: flex;
     align-items: center;
     margin-right: 40px;
@@ -38,14 +38,14 @@ header ul{
     list-style-type: none;
 }
 
-/*Layout de um botão do menu quando passa o mouse em cima*/
-header  li:hover a {
+/* Layout de um botão do menu quando passa o mouse em cima */
+header li:hover a {
     display: flex;
     color: yellow;
     transform: scale(1.3);
 }
 
-/*layout de um botão do menu quando não passa o mouse em cima*/
+/* Layout de um botão do menu quando não passa o mouse em cima */
 header li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -59,13 +59,13 @@ header img {
     object-fit: contain;
 }
 
-/*Layout das duas colunas do site*/
-.conteiner{
+/* Layout das duas colunas do site */
+.conteiner {
     display: flex;
     width: 100%;
 }
 
-.coluna{
+.coluna {
     float: left;
     display: flex;
     justify-content: center;
@@ -76,12 +76,12 @@ header img {
     background-color: rgb(66, 214, 255);
 }
 
-.coluna img{
+.coluna img {
     width: 100px;
     height: 100px;
 }
 
-/*Layout do Conteúdo principal*/
+/* Layout do Conteúdo principal */
 main {
     float: left;
     width: calc(100% - 12% - 12%);
@@ -153,34 +153,48 @@ main tr:hover {
     border: solid 2px;
 }
 
-/*Layout do Footer*/
+/* Layout do Footer */
 footer {
     float: left;
     width: 100%;
-    height: 100px;
+    min-height: 120px;
     border-top: solid 2px black;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
     background-color: rgb(229, 255, 63);
+    padding: 20px 0;
 }
 
-/*layout lista do footer*/
-footer ul {
-    list-style-type: none;
+/* Container interno para alinhar tudo ao centro */
+.footer-content {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    width: 100%;
 }
 
-/*layout h1 do footer*/
+/* Layout h1 do footer */
 footer h1 {
-    display: flex;
     font-family: "Tangerine", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
+    font-size: 45px;
+    margin: 0;
+}
+
+/* Layout lista do footer */
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
 }
 
 footer li {
@@ -191,7 +205,7 @@ footer li {
     color: black;
 }
 
-/*Main da história*/
+/* Main da história */
 .historia {
     display: flex;
     flex-direction: column;
@@ -211,7 +225,7 @@ footer li {
     text-align: center;
 }
 
-/*Fonte do h1 na história*/
+/* Fonte do h1 na história */
 figure h1 {
     font-family: "Tangerine", cursive;
     font-weight: 400;
@@ -219,7 +233,7 @@ figure h1 {
     font-size: 40px;
 }
 
-/*Main das fotos*/
+/* Main das fotos */
 .fotos {
     display: flex;
     flex-direction: column;
@@ -239,7 +253,7 @@ figure h1 {
     text-align: center;
 }
 
-/*Layout do player*/
+/* Layout do player */
 .musica {
     display: flex;
     flex-direction: column;
@@ -280,44 +294,143 @@ figure h1 {
     font-style: normal;
     font-size: 60px;
 }
-        .calendario-propostas {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            width: 100%;
-            margin-bottom: 40px;
-        }
 
-        .dia-proposta {
-            background: #ffffff;
-            border: 2px solid black;
-            border-radius: 12px;
-            box-shadow: 4px 4px 0px black;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
+/* Estilos de Contato, Formulário e Tabelas Extras */
+.conteudo {
+    width: 100%;
+}
 
-        .dia-cabecalho {
-            background-color: rgb(110, 255, 62);
-            color: black;
-            font-weight: bold;
-            text-align: center;
-            padding: 10px;
-            font-size: 18px;
-            border-bottom: 2px solid black;
-            font-family: 'Montserrat', sans-serif;
-        }
+.card-contato {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.8);
+}
 
-        .dia-conteudo {
-            padding: 15px;
-            font-size: 14px;
-            line-height: 1.5;
-            color: #333;
-        }
+.card-contato h2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
-        .dia-conteudo strong {
-            display: block;
-            margin-bottom: 5px;
-            color: #000;
-        }
+.card-contato p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: white;
+}
+
+.card-contato button[type="submit"] {
+    background-color: rgb(110, 255, 62);
+    color: black;
+    font-weight: bold;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8);
+}
+
+/* Container e Tabela de Propostas */
+.tabela-propostas-wrapper {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.8);
+    overflow-x: auto;
+}
+
+.tabela-propostas {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.tabela-propostas th,
+.tabela-propostas td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tabela-propostas th {
+    font-weight: bold;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid black;
+}
+
+.tabela-propostas tr:last-child td {
+    border-bottom: none;
+}
+
+.destaque-coluna {
+    font-weight: bold;
+}
+
+/* Calendário / Grid de Propostas */
+.calendario-propostas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.dia-proposta {
+    background: #ffffff;
+    border: 2px solid black;
+    border-radius: 12px;
+    box-shadow: 4px 4px 0px black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.dia-cabecalho {
+    background-color: rgb(110, 255, 62);
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dia-conteudo {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.dia-conteudo strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
