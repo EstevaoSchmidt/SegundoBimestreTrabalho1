@@ -75,15 +75,62 @@ box-shadow: 5px 5px 0px rgba(0,0,0,0.8);
     font-weight: bold;
 
 }
-.dia-contato {
-    padding: 15px;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #333;
+
+.contato {
+    width: 100%;
 }
 
-.dia-contato strong {
+.card-contato {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+.card-contato h2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-contato p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group label {
     display: block;
+    font-weight: bold;
     margin-bottom: 5px;
-    color: #000;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: white;
+}
+
+.card-contato button[type="submit"] {
+    background-color: rgb(110, 255, 62);
+    color: black;
+    font-weight: bold;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8);
 }
